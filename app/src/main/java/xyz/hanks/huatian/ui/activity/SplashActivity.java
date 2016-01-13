@@ -1,10 +1,10 @@
 package xyz.hanks.huatian.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
 import xyz.hanks.huatian.R;
-import xyz.hanks.huatian.util.A;
 
 
 /**
@@ -68,7 +68,10 @@ public class SplashActivity extends BaseActivity {
     private void goHome() {
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                A.goOtherActivityFinish(context, MainActivity.class);
+                Intent intent = new Intent(context, MainActivity.class);
+                startActivity(intent);
+                SplashActivity.this.finish();
+
             }
         }, 1000);
     }

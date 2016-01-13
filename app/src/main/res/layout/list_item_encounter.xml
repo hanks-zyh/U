@@ -113,6 +113,7 @@
             android:textColor="@color/grey" />
 
         <View
+            android:layout_marginTop="4dp"
             android:id="@+id/line"
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -127,7 +128,10 @@
             android:layout_below="@+id/line"
             android:layout_toRightOf="@+id/iv_avatar"
             android:ellipsize="end"
-            android:maxLines="4"
+            android:layout_marginTop="8dp"
+            android:maxLines="3"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.2"
             android:text="交友条件:呵呵"
             android:textColor="@color/black" />
     </RelativeLayout>
