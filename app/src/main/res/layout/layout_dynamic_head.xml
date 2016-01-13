@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="nickname"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/home_dynamic_more_normal"
+        android:gravity="center_vertical|right"
+        android:text="15:30"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_nick"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:gravity="center_vertical"
+        android:text="24岁"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_nick"
+        android:layout_toRightOf="@+id/tv_age"
+        android:gravity="center_vertical"
+        android:text="163cm"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_nick"
+        android:layout_toRightOf="@+id/tv_height"
+        android:drawableLeft="@drawable/home_picnum_ic"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:text="1"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_nick"
+        android:layout_toRightOf="@+id/tv_album"
+        android:drawableLeft="@drawable/home_location_ic"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:text="23.32km"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>

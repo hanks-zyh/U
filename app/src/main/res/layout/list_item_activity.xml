@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <include
+        layout="@layout/layout_dynamic_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            style="@style/ActivityText"
+            android:drawableLeft="@drawable/date_topic"
+            android:text="约会" />
+
+        <TextView
+            android:id="@+id/tv_topic_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_topic"
+            android:layout_alignBottom="@+id/tv_topic"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_topic"
+            android:background="@drawable/date_topic_text_bg"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="运动"
+            android:textColor="#A556C7"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_paytype"
+            style="@style/ActivityText"
+            android:layout_below="@+id/tv_topic"
+            android:drawableLeft="@drawable/date_paytype"
+            android:text="我豪爽我买单" />
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            style="@style/ActivityText"
+            android:layout_below="@+id/tv_paytype"
+            android:drawableLeft="@drawable/date_time"
+            android:text="周末" />
+
+        <TextView
+            android:id="@+id/tv_date_location"
+            style="@style/ActivityText"
+            android:layout_below="@+id/tv_date_time"
+            android:drawableLeft="@drawable/date_location"
+            android:text="北京" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            style="@style/ActivityText"
+            android:layout_below="@+id/tv_date_location"
+            android:drawableLeft="@drawable/date_detail"
+            android:text="台球羽毛球篮球都可以" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3333" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            style="@style/ActivityText"
+            android:layout_centerVertical="true"
+            android:text="等你第一个来报名"
+            android:textColor="#8111"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/date_enroll_text_bg"
+            android:gravity="center"
+            android:text="报名"
+            android:textColor="#A556C7"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

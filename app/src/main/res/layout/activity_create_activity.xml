@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/date_show" />
+
+    <RelativeLayout
+        android:id="@+id/layout_topic"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="主题" />
+
+        <ImageView
+            android:id="@+id/arrow_0"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/topic_arrow" />
+
+        <TextView
+            android:id="@+id/tv_topic"
+            style="@style/FilterTextRight"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/arrow_0"
+            android:text="看电影" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_paytype"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="费用" />
+
+        <ImageView
+            android:id="@+id/arrow_1"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/topic_arrow" />
+
+        <TextView
+            android:id="@+id/tv_paytype"
+            style="@style/FilterTextRight"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/arrow_1"
+            android:text="我好爽我买单" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_datetime"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="时间" />
+
+        <ImageView
+            android:id="@+id/arrow_2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/topic_arrow" />
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            style="@style/FilterTextRight"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/arrow_2"
+            android:text="请设置约会时间" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_datelocation"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="地点" />
+
+        <TextView
+            android:id="@+id/tv_datelocation"
+            style="@style/FilterTextRight"
+            android:text="请输入约会地点" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_gift"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="礼物" />
+
+        <ImageView
+            android:id="@+id/arrow_4"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/topic_arrow" />
+
+        <TextView
+            android:id="@+id/tv_gift"
+            style="@style/FilterTextRight"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/arrow_4"
+            android:text="报名不需要礼物" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/FilterRelativeLayout"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="详情" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="不超过30个字"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
