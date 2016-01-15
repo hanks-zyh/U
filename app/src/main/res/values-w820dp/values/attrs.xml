@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CircularImageView for custom shape -->
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="selector" format="boolean"></attr>
+        <attr name="selector_color" format="color"></attr>
+        <attr name="selector_stroke_color" format="color"></attr>
+        <attr name="selector_stroke_width" format="dimension"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/layout_age"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="年龄" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            style="@style/FilterTextRight"
+            android:text="18-24岁" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_city"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="居住在" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/FilterTextRight"
+            android:text="广东深圳" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_height"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="身高" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            style="@style/FilterTextRight"
+            android:text="不限" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_education"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="学历" />
+
+        <TextView
+            android:id="@+id/tv_education"
+            style="@style/FilterTextRight"
+            android:text="不限" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_money"
+        style="@style/FilterRelativeLayout">
+
+        <TextView
+            style="@style/FilterTextLeft"
+            android:text="月收入" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/FilterTextRight"
+            android:text="不限" />
+
+        <View style="@style/FilterDivder" />
+    </RelativeLayout>
+
+</LinearLayout>
