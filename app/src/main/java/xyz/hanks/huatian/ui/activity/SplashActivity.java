@@ -62,6 +62,7 @@ public class SplashActivity extends BaseActivity {
     private void checkNewPicture() {
     }
 
+
     /**
      * 去主界面
      */

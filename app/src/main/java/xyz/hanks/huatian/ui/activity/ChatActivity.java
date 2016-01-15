@@ -62,10 +62,6 @@ import xyz.hanks.huatian.util.ZRecordManager;
  * @date 2014-6-3 下午4:33:11
  */
 
-/**
- * @ClassName: ChatActivity
- * @date 2014-6-23 下午3:28:49
- */
 public class ChatActivity extends BaseActivity implements OnClickListener, XListView.IXListViewListener, EventListener {
     public static final int NEW_MESSAGE = 0x001;// 收到消息
     private static int MsgPagerNum;
