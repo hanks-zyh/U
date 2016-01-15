@@ -91,7 +91,7 @@ public class SelectPictureActivity extends Activity {
     }
 
     public void select(View v) {
-        list.setVisibility(0);
+        list.setVisibility(View.VISIBLE);
     }
 
     /**
@@ -137,10 +137,9 @@ public class SelectPictureActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 currentImageFolder = mDirPaths.get(position);
-                Log.d("zyh", position + "-------" + currentImageFolder.getName() + "----"
-                        + currentImageFolder.images.size());
+                //Log.d("zyh", position + "-------" + currentImageFolder.getName() + "----"                 + currentImageFolder.images.size());
                 adapter.notifyDataSetChanged();
-                list.setVisibility(8);
+                list.setVisibility(View.GONE);
                 btn_select.setText(currentImageFolder.getName());
             }
         });
@@ -211,13 +210,13 @@ public class SelectPictureActivity extends Activity {
         Cursor mCursor = mContentResolver.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
                 new String[]{MediaStore.Images.ImageColumns.DATA}, "", null,
                 MediaStore.MediaColumns.DATE_ADDED + " DESC");
-        Log.e("TAG", mCursor.getCount() + "");
+        //Log.e("TAG", mCursor.getCount() + "");
         if (mCursor.moveToFirst()) {
             int _date = mCursor.getColumnIndex(MediaStore.Images.Media.DATA);
             do {
                 // 获取图片的路径
                 String path = mCursor.getString(_date);
-                Log.e("TAG", path);
+                // Log.e("TAG", path);
                 imageAll.images.add(new ImageItem(path));
                 // 获取该图片的父路径名
                 File parentFile = new File(path).getParentFile();
@@ -232,7 +231,7 @@ public class SelectPictureActivity extends Activity {
                     imageFloder.setDir(dirPath);
                     imageFloder.setFirstImagePath(path);
                     mDirPaths.add(imageFloder);
-                    Log.d("zyh", dirPath + "," + path);
+                    //Log.d("zyh", dirPath + "," + path);
                     tmpDir.put(dirPath, mDirPaths.indexOf(imageFloder));
                 } else {
                     imageFloder = mDirPaths.get(tmpDir.get(dirPath));
@@ -243,7 +242,7 @@ public class SelectPictureActivity extends Activity {
         mCursor.close();
         for (int i = 0; i < mDirPaths.size(); i++) {
             ImageFloder f = mDirPaths.get(i);
-            Log.d("zyh", i + "-----" + f.getName() + "---" + f.images.size());
+            //Log.d("zyh", i + "-----" + f.getName() + "---" + f.images.size());
         }
 
         // 扫描完成，辅助的HashSet也就可以释放内存了
