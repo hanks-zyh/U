@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="nickname"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/home_dynamic_more_normal"
+            android:gravity="center_vertical|right"
+            android:text="15:30"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_nick"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:gravity="center_vertical"
+            android:text="24岁"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_nick"
+            android:layout_toRightOf="@+id/tv_age"
+            android:gravity="center_vertical"
+            android:text="163cm"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_education"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_nick"
+            android:layout_toRightOf="@+id/tv_height"
+            android:gravity="center_vertical"
+            android:text="大专"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_album"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_nick"
+            android:layout_toRightOf="@+id/tv_education"
+            android:drawableLeft="@drawable/home_picnum_ic"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="1"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_age"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="6千-1万"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_age"
+            android:layout_toRightOf="@+id/tv_money"
+            android:drawableLeft="@drawable/home_location_ic"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="23.32km"
+            android:textColor="@color/grey" />
+
+        <View
+            android:layout_marginTop="4dp"
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_money"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:background="#2222" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            android:maxLines="3"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="交友条件:呵呵"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/encounter_like_bg" />
+
+            <Button
+                android:id="@+id/btn_unlike"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableTop="@drawable/encounter_like_selector"
+                android:text="不喜欢"
+                android:textColor="#AEAEAE"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/encounter_sayhi_bg" />
+
+            <Button
+                android:id="@+id/btn_sayhi"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableTop="@drawable/encounter_sayhi_selector"
+                android:text="打招呼"
+                android:textColor="#78CAEF"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/encounter_collect_bg" />
+
+            <Button
+                android:id="@+id/btn_collect"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableTop="@drawable/encounter_collect_selector"
+                android:text="收藏"
+                android:textColor="#ED5540"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/btn_collect"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_bg_selector"
+            android:drawableLeft="@drawable/encounter_collect_selector"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="喜欢"
+            android:textColor="#ED5540"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
